@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    position: relative;
+    display: flex;
+}
+ul li{
+   position: relative;
+   list-style: none;
+   margin: 0 25px;
+}
+ul li a{
+    text-decoration: none;
+}
+.fa-brands{
+    font-size:6em;
+    color: #fff;
+}
+ul li::before{
+    font-family: fontAwesome;
+    font-size: 6em;
+    top: 0;
+    left: 0;
+    height: 0;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+ul li:nth-child(1)::before{
+    content: '\f099';
+    color: #1da1f2;
+    border-bottom: 4px solid #1da1f2;
+}
+ul li:nth-child(2)::before{
+    content: '\f167';
+    color: #d02005;
+    border-bottom: 4px solid #ff0000;
+}
+ul li:nth-child(3)::before{
+    content: '\f232';
+    color: #025d08;
+    border-bottom: 4px solid #025d08;
+}
+ul li:hover::before{
+    height: 100%;
+    
+}

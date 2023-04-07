@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>backimage</title>
+    <style>
+        body {
+            /* background-color: blueviolet;
+            background-image: url(wallback.jpg);
+            background-repeat: no-repeat;
+            background-position:40% 10%; */
+            /* background: gold url(wallback.jpg) no-repeat 400px 100px; */
+            /* background-size: contain; */
+            background-attachment: scroll;
+        }
+
+        .box {
+            width: 800px;
+            height: 500px;
+            padding: 10px;
+            border: 3px dotted black;
+            /* background-color: blueviolet;  */
+            background: blueviolet url(wallback.jpg) no-repeat;
+            background-origin: content-box;
+        }
+
+        .box2 {
+            margin: 20px 0 0 0;
+            width: 800px;
+            height: 500px;
+            padding: 10px;
+            border: 3px solid black;
+            color: white;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /* background:linear-gradient(180deg,red,yellow,green,blue); */
+            background: radial-gradient(circle, red, yellow, green 40%);
+            /* background-color:rgb(120,0,0); */
+            /* background-color: rgba(255, 100, 0, 1); */
+            /* background-clip: content-box; */
+            opacity: 0.5;
+        }
+
+        .box3 {
+            margin: 20px 0 0 0;
+            width: 800px;
+            height: 500px;
+            padding: 10px;
+            border: 3px dotted black;
+            background-image: linear-gradient(to right, rgb(132, 255, 0), #dd00ff), url("https://images.unsplash.com/photo-1624838000479-f9ccd589b628?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+        }
+
+            h1 {
+                background: red;
+                text-align: center;
+                font-size: 40px;
+                mix-blend-mode:overlay;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </div>
+    <div class="box2">
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </div>
+    <div class="box3">
+        <h1>Mix blend mode</h1>
+    </div>
+</body>
+
+</html>
